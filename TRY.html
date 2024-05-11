@@ -1,0 +1,52 @@
+</html>
+
+#scroller-wrapper {
+top:0;
+width:102vw;
+height:100%;
+position:absolute;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+
+#scroller {
+top:-600vw;
+left:0;
+max-width:100%;
+width:60%;
+height:1250%;
+position:relative;
+z-index:800;
+}
+
+.img-defile {
+display:block;
+max-width:100%;
+height:auto;
+position:absolute;
+overflow:hidden;
+}
+
+.img-defile img {
+width:600px;
+}
+
+.custom-scroll {
+height: calc(80% - 20px);
+}
+</style>
+
+<body>
+<div id="scroller-wrapper">
+<div id="scroller">
+     <div id="img-defile1" class="img-defile">
+        <img src="img/image.jpg"/>
+     </div>
+     ...
+     <div id="img-defile20" class="img-defile">
+        <img src="img/image20.jpg"/>
+     </div>
+</div>
+</div>
+</body>
+</html>
